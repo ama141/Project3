@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Portfolio</title>
+		<!-- 
+		<link href="css/normalize.css" rel="stylesheet"> -->
+		<link href="css/main.css" rel="stylesheet">
+		<!-- <link href="css/fonts.css" rel="stylesheet">
+		<link href="css/grids.css" rel="stylesheet"> -->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+
+		<link rel="stylesheet" 
+		href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="http://unpkg.com/boxicons@latest/css/boxicons.min.css">
+			
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		
+		<script type="text/javascript" src="js/script.js"></script>
+
+	</head>
+
+	<body>
+
+		<header>
+			<a href="#home" class="logo"><img src="img/logo1.png"></a>
+			<div class="bx bx-menu" id="menu-icon"></div>
+
+			<ul class="navlist">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+				
+			</ul>
+		</header>
+
+
+	
+
+		<!--------home---->
+		<section class="home" id="home">
+			<div class="home-text">
+				<h3>Hello, I'm</h3>
+				<h1>Anna Mathew</h1>
+				<h5>UX/UI Designer <span>From Vancouver</span></h5>
+				<p>I design thoughtful digital experiences by bridging the gap between business goals and human needs, using my curiosity to discover valuable insights while creating satisfying digital experiences. If you have a vision and a goal and I am ready to take you there <br></p>
+				<!-- <div class="social">
+					<a href="#"><i class='bx bxl-linkedin' ></i></a>
+				</div> -->
+				<a href="#about" class="btn">About Me</a>
+			</div>
+
+				<div class="home-img">
+					<img src="img/main.png">
+				</div>
+		</section>
+
+		<!-- ------sub service---->
+		<section class="sub-service">
+			<div class="items">
+				<div class="sub-box">
+					<div class="sub-img">
+						<img src="img/target.svg">
+					</div>
+					<h3>Pixel Perfect</h3>
+					<p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+				</div>
+
+				<div class="sub-box">
+					<div class="sub-img">
+						<img src="img/brush.svg">
+					</div>
+					<h3>High Quality</h3>
+					<p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+				</div>
+
+				<div class="sub-box">
+					<div class="sub-img">
+						<img src="img/energy.svg">
+					</div>
+					<h3>Awesome Idea</h3>
+					<p>Most common methods for designing websites that work well on desktop is responsive and adaptive design.</p>
+				</div>
+
+			</div>
+		</section>
+
+		<!--------About---->
+		<section class="about" id="about">
+			<div class="about-img">
+				<img src="img/spacecentre.png">
+			</div>
+
+			<div class="about-text">
+				<!-- <h3>Case Study</h3> -->
+				<h2>More About Me</h2>
+				<p>I had the opportunity to start my professional career as a graphic designer and content creator. During that time I started developing a taste in branding helping local companies find their brand identity. I realized I helped them discover their vision and designed a path to achieve their goals. What draws me to UX design is its major role in finding creative and practical solutions to solve users problems and revealing new opportunities through design processes. </p>
+				<a href="casestudy.html" class="btn">Contact </a>
+			</div>
+		</section>
+
+		<!--------portfolio---->
+		<section class="portfolio" id="portfolio">
+			<div class="heading">
+			
+				<h2>PORTFOLIO</h2>
+				<p>H.R. MacMillan Space Centre is a non-profit community
+					resource that brings the wonders of space to Earth,
+					while providing a personal sense of ongoing discovery.</p>
+			</div>
+
+			<div class="portfolio-content">
+				<div class="col">
+					
+					<img src="img/spacecentre.png">
+
+					<!-- <div class="layer"> -->
+					<div class="layer">
+						<a href="casestudy.html" class="layer"></a>
+						<h3>H.R MacMillian Space Centre</h3>
+					</div>
+					
+					
+				</div>
+			</div>
+
+
+		</section>
+
+	
+		<section class="portfolio" id="portfolio">
+
+			<div class="heading1">
+				
+				<h2>GALLERY</h2>
+				<p>Other fun projects I have worked</p>
+					
+			</div>
+
+			<div class="container text-center">
+				
+				
+				<div id="myBtnContainer">
+					
+					
+					<button class="btn1 active" onclick="filterSelection('all')"> Show all</button>
+					<button class="btn1" onclick="filterSelection('Social Media')"> Social Media</button>
+					<button class="btn1" onclick="filterSelection('Media Kits')"> Media Kits</button>
+					<button class="btn1" onclick="filterSelection('Branding')"> Marketing</button>
+					
+				
+				</div>
+			</div>	
+			<!-- Portfolio Gallery Grid -->
+			<div class="row">
+				<div class="column Branding">
+				<div class="content">
+					<img src="img/Gift-card.jpg"alt="Mountains" style="width:100%">
+					<!-- <h4>Mountains</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+
+				
+				<div class="column Social Media">
+				<div class="content">
+					<img src="img/B+Gsand.jpg"alt="Car" style="width:100%">
+					<!-- <h4>Lights</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+				<!-- <div class="column Social Media">
+				<div class="content">
+					<video width="400" height="500" autoplay muted>
+						<source src="img/natural.MP4" type="video/mp4">
+					</video>
+				</div>
+				</div> -->
+			
+				<div class="column Social Media">
+				<div class="content">
+					<img src="img/kim-instagram.png"alt="Car" style="width:100%">
+					<!-- <h4>Retro</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+				<div class="column cars">
+				<div class="content">
+					<img src="img/Thank you card_B+G1.jpg" alt="People" style="width:100%">
+					<!-- <h4>Fast</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+				<div class="column Branding">
+				<div class="content">
+					<img src="img/Shopping-side-beige.jpg" alt="Car" style="width:100%">
+					<!-- <h4>Classic</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+			
+				<div class="column Social Media">
+				<div class="content">
+					<img src="img/kim-instagram2.png" alt="People" style="width:100%">
+					<!-- <h4>Girl</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+				</div>
+				<!-- <div class="column people">
+					<div class="content">
+					<video width="300" height="400" autoplay muted>
+						<source src="img/reel.mp4" type="video/mp4" style="width: 100%">
+					</video>
+					</div> 
+				</div>
+				-->
+				<div class="column Branding">
+				<div class="content">
+					<img src="img/BrandingGuidelines_Bella+Gaia_March232022_Page_01.png" alt="People" style="width:100%">
+					<!-- <h4>Man</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div>
+			</div>
+			<!-- <div class="column people">
+				<div class="content">
+				  <video width="500" height="500" autoplay muted>
+					  <source src="img/greeceB+G.MP4" type="video/mp4">
+				  </video>
+				</div> 
+		    </div> --> 
+			<div class="column Social Media">
+				<div class="content">
+					<img src="img/kim-instagram1.png"alt="Car" style="width:100%">
+					<!-- <h4>Forest</h4>
+					<p>Lorem ipsum dolor..</p> -->
+				</div> 
+		    </div>
+		
+			
+
+			<script>
+			filterSelection("all")
+			function filterSelection(c) {
+				var x, i;
+				x = document.getElementsByClassName("column");
+				if (c == "all") c = "";
+				for (i = 0; i < x.length; i++) {
+					w3RemoveClass(x[i], "show");
+					if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+				}
+			}
+				
+			function w3AddClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+				}
+			}
+				
+			function w3RemoveClass(element, name) {
+				var i, arr1, arr2;
+				arr1 = element.className.split(" ");
+				arr2 = name.split(" ");
+				for (i = 0; i < arr2.length; i++) {
+					while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);     
+					}
+				}
+				element.className = arr1.join(" ");
+			}
+				
+				
+			// Add active class to the current button (highlight it)
+			var btnContainer = document.getElementById("myBtnContainer");
+				var btns = btnContainer.getElementsByClassName("btn1");
+				for (var i = 0; i < btns.length; i++) {
+				btns[i].addEventListener("click", function(){
+					var current = document.getElementsByClassName("active");
+					current[0].className = current[0].className.replace(" active", "");
+					this.className += " active";
+				});
+			}
+			</script>
+
+
+
+
+
+
+
+
+		</section>	
+		<!-- <section class="portfolio" id="portfolio"> -->
+		
+		
+
+	
+
+		<section id="contact" class="add-padding">
+				
+				
+			<div class="container text-center">
+					
+				<div class="row">
+					
+					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+						
+							<div class="heading1"> 
+								<h2>CONTACT ME</h2>
+							</div>
+							
+							<p class="lead">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
+
+							<p>Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js, Handlebars.js, jQuery, AJAX, HTML5, CSS3, SASS, SQL, APIs, Git, GitHub/Bitbucket, WordPress, Heroku, Responsive/Mobile Development.
+
+							<p>Please feel free to contact me with questions, comments or collaborations.</p>
+
+							<p>For more information, <a href="http://korenlc.com" target="_blank">visit my blog.</a></p>
+						
+					</div>
+					
+						<!--=== Contact Form ===-->
+
+					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="/casestudy.html" method="post" novalidate>
+							
+							<div class="form-group">
+							<label class="control-label" for="contact-name">Name</label>
+							<div class="controls">
+								<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+								<i class="fa fa-user"></i>
+							</div>
+							</div><!-- End name input -->
+							
+							<div class="form-group">
+							<label class="control-label" for="contact-mail">Email</label>
+							<div class=" controls">
+								<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+								<i class="fa fa-envelope"></i>
+							</div>
+							</div><!-- End email input -->
+							
+							<div class="form-group">
+							<label class="control-label" for="contact-message">Message</label>
+								<div class="controls">
+									<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+									<i class="fa fa-comment"></i>
+								</div>
+								<!-- <a href="#about" class="btn">About Me</a> -->
+								<!-- <a href="mailto:theannamathew@gmail.com" class="btn">Submit</a>  -->
+							</div><!-- End textarea -->
+							<!-- <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p> -->
+								<!-- <input type="hidden" name="submitted" id="submitted" value="true" /> -->
+
+				
+					</form><!-- End contact-form -->
+
+					<div class="container text-center"> 
+						<button class="save-btn">Submit</button>
+							<!-- <div class="loader"></div> -->
+
+							<!-- <div class="loader"></div> -->
+						
+						<script>
+							save_btn= document.querySelector(".save-btn");
+								
+							save_btn.onclick=function(){
+									this.innerHTML= "<div class='loader'></div>";
+									setTimeout(()=> {
+										this.innerHTML= "Submitted";
+										this.style = "background: #a578d7; color: white; pointer-events: none";
+									}, 2000);
+								}
+						</script> 
+					</div>	
+						<!-- <script>
+							function myFunction() {
+							alert("The form was submitted");
+							}
+						</script> -->
+						
+					
+					
+				</div>
+			
+			</div>
+
+
+			<script src="https://unpkg.com/scrollreveal"></script>
+
+			<!--------Link to js---->
+			<script type="text/javascript" src="js/script.js"></script>
+		</section>
+
+		
+	</body>
+
+	<footer>
+		<p>If you want to know more about me, my projects or simply grab a cup of coffee together. Just send me an email. I would love to hear from you.<br>
+		
+			
+			<a href="mailto:theannamathew@gmail.com">theannamathew@gmail.com</a></p> 
+	</footer>
+
+	<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+
+	<!--------Link to js---->
+	<script type="text/javascript" src="css/js.js"></script>
+
+</html>

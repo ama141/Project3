@@ -1,0 +1,30 @@
+/*600/16=37.5rem */
+
+
+
+@media (min-width: 37.5rem){
+
+    .nav-main, .grid.two-column{
+		padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 62.5rem){
+	
+    .nav-main, .grid.four-column{
+		padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.nav-main  {
+	padding: 1.5rem;
+}
+
+@media (min-width: 37.5rem){
+	.block, .grid.two-column{
+		grid-template-columns: 1fr 1fr;
+		/* grid-template-rows: 1fr 1fr; */
+	}
+}

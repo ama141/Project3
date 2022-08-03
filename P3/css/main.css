@@ -1,24 +1,20 @@
-/*
-  STYLE GUIDE STYLING 
-  Default styling for the style guide 
-*/
-
 
 * {
+	padding: 0;
+	margin: 0;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  user-select: none;
 
 }
-.mySlides {display: none}
-img {vertical-align: middle;}
-
-
+.mySlides {
+	display: none
+}
+img {
+	vertical-align: middle;
+}
 
 :root{
   --bg-color: #ffffff;
@@ -37,7 +33,7 @@ body {
 }
 
 header{
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   right:0;
@@ -45,10 +41,9 @@ header{
   display: flex;
   align-items: center;
   justify-content:space-between;
-  background: transparent;
+  /* background:aqua; */
   padding: 30px 18%;
-  transition: .10s;
-
+  transition: .3s;
 
 }
 
@@ -91,14 +86,15 @@ header{
 }
 
 #menu-icon{
-	font-size: 2.5rem;
+	font-size: 35px;
 	color: var(--text-color);
+	color: #f86db0;
 	z-index: 10001;
 	cursor: pointer;
 	display: none;
 }
 
-.top-btn{
+/* .top-btn{
 	display: inline-block;
 	padding: 9px 30px;
 	background: transparent;
@@ -110,14 +106,14 @@ header{
 	font-weight: 500;
 	transition: ease .50s;
 
-}
+} */
 
-.top-btn:hover{
+/* .top-btn:hover{
 	transform: scale(1.1);
 	background: var(--main-color);
 	border: 2px solid var(--main-color);
 	color: var(a578d7);
-}
+} */
 
 section{
 	padding: 100px 18%;
@@ -291,11 +287,11 @@ span{
 	height: auto;
 }
 
-header.sticky{
+/* header.sticky{
 	background: var(--bg-color);
 	padding: 13px 18%;
 	box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
-}
+} */
 
 .items{
 	display: grid;
@@ -419,7 +415,7 @@ header.sticky{
 }
 
 
-/* .gallery-content{
+.gallery-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
 	grid-gap: 2rem;
@@ -427,12 +423,12 @@ header.sticky{
 	margin-top: 5rem;
 	text-align: center;
 	cursor: pointer;
-} */
+}
 .col{
 	position: relative;
 }
 .col img{
-	max-width: 100%;
+	max-width: 60%;
 	width: 550px;
 	height: auto;
 	object-fit: cover;
@@ -462,7 +458,8 @@ header.sticky{
 }
 
 .layer:hover{
-	background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+	/* background: linear-gradient(rgba(0,0,0,0.5) 0%, #bc9ad3); */
+	background: linear-gradient(rgba(0,0,0,0.5) 0%, rgb(0 0 0 / 50%));
 	
 }
 .layer h3{
@@ -595,7 +592,7 @@ header.sticky{
 	font-size: var(--p-font);
 }
 
-.contact{
+/* .contact{
 	background: #8067f0eb;
 	width: 64%;
 	margin: 100px auto;
@@ -607,7 +604,7 @@ header.sticky{
 	border-radius: 12px;
 	background-image: url(../img/intro.png);
 	background-size: cover;
-}
+} */
 .center h3{
 	font-size: 1.5rem;
 	font-weight: 500;
@@ -634,7 +631,7 @@ header.sticky{
 .contact .action form input[type="submit"] {
 	padding: 12px 40px;
 	background: var(--main-color);
-	/* color: var(--bg-color); */
+	color: var(--bg-color);
 	border: none;
 	outline: none;
 	margin: 0 10px 20px 0;
@@ -660,7 +657,7 @@ header.sticky{
 		transition: .3s;
 	}
 	section{
-		padding: 70px 3%;
+		padding: 60px 3%;
 		transition: .3s;
 	}
 	.contact{
@@ -917,7 +914,7 @@ h3.middle {
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
     background: yellow;
-	;
+
 }
 
 .color2 .service-icon:after{
@@ -935,15 +932,12 @@ h3.middle {
 
 
 
-
-
-
-#contact{
+/* #contact{s
     background-image:url('../images/bg-contact.png');
     background-repeat:no-repeat;
     background-position:0 100%;
     background-color: #fff;
-}
+} */
 
 #contact-form .form-group label{
     display:none;
@@ -1024,33 +1018,6 @@ h3.middle {
 	
 }
 
-#contact-form .form-control:focus {
-	margin-left: 0px;
-    background:#fff;
-    border-bottom:2px solid #f9398c;
-    outline:none;
-    box-shadow:none;
-    -webkit-transition:border-color .3s ease-in;
-    transition:border-color .3s ease-in;
-}
-
-/* #contact-form .error-message {
-    padding:5px 0;
-    position:absolute;
-    top:-30px;
-    right:0;
-    font-size:14px;
-    font-weight:300;
-    color:#ff0000;
-    z-index:10;
-} */
-
-/* #contact-form .error-message:before {
-    content:"\00d7";
-    font-size: 21px;
-    line-height: 21px;
-    margin-right: 5px;
-} */
 
 .save-btn{
 
@@ -1139,7 +1106,7 @@ a:hover{
 /* Add padding BETWEEN each column */
 .row,
 .row > .column {
-  padding: 30px;
+  padding: 10px;
 }
 
 /* Create three equal columns that floats next to each other */

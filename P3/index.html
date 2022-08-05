@@ -8,11 +8,12 @@
 		<title>Anna Mathew</title>
 
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="http://unpkg.com/boxicons@latest/css/boxicons.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 
 	</head>
 	<body>
@@ -20,44 +21,47 @@
 			<a href="index.html" class="logo"><img src="img/logo1.png" alt="Anna Mathew Logo"></a>  
 			<div class="bx bx-menu" id="menu-icon"></div>
 
-			<ul class="navlist">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#about">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
+			<nav class="navlist">
+				<a href="#home">Home</a>
+				<a href="#about"class="about-text">About</a>
+				<a href="casestudy.html">Portfolio</a>
+				<a href="#contact"class="contact-form">Contact</a>
+			</nav>
 			
 		</header>
 
 		<section class="home" id="home">
 			<div class="home-text">
-				<h3>Hello, I'm</h3>
+			
+				<span class="h1">
+					<span>Hello, I'm</span>
+				</span>
 				<h1>Anna Mathew</h1>
-				<h5>UX/UI Designer <span>From Vancouver</span></h5>
-				<p>I design thoughtful digital experiences by bridging the gap between business goals and human needs, using my curiosity to discover valuable insights while creating satisfying digital experiences.  <br></p>
-				<!-- If you have a vision and a goal and I am ready to take you there -->
-						<!-- <div class="social">
-							<a href="#"><i class='bx bxl-linkedin' ></i></a>
-						</div> -->
-				<a href="#about" class="btn">About Me</a>
+				<span class="type">
+					<span>UX Designer/Researcher</span>
+				</span>
+
+			</div>
+			<div class="home-img">
+				<img src="img/main.png" alt="UX iphone pink and blue" height="200" width="200" >
 			</div>
 
-			<div class="home-img">
-				<img src="img/main.png" alt="UX iphone pink and blue">
-			</div>
 		</section>
 
 
 		<!--------About---->
 		<section class="about" id="about">
 			<div class="about-img">
-				<img src="img/spacecentre.png" alt="Space Centre Quiz on iphone">
+				<img src="img/annamathew99.png" alt="Picture of Anna Mathew" height="200" width="200" >
 			</div>
 
 			<div class="about-text">
-				<h2>More About Me</h2>
-				<p>I had the opportunity to start my professional career as a graphic designer and content creator. During that time I started developing a taste in branding helping local companies find their brand identity. I realized I helped them discover their vision and designed a path to achieve their goals. What draws me to UX design is its major role in finding creative and practical solutions to solve users problems and revealing new opportunities through design processes. </p>
-				<a href="casestudy.html" class="btn">Contact </a>
+				<h2>More About Myself</h2>
+				<p>I'm a UX designer based in Vancouver, BC. My interest in UX design stems from its crucial role in finding creative and practical solutions to solve users-frustraion and reveal new opportunities through design processes. 
+
+					I design thoughtful digital experiences by bridging the gap between business goals and human needs, using my curiosity to discover valuable insights while creating satisfying digital experiences.
+				</p>
+				<a href="#contact"class="btn">Contact </a>
 			</div>
 		</section>
 
@@ -66,20 +70,17 @@
 			<div class="heading">
 				
 				<h2>PORTFOLIO</h2>
-				<p>H.R. MacMillan Space Centre is a non-profit community
-				resource that brings the wonders of space to Earth,
-				while providing a personal sense of ongoing discovery.</p>
+				<p>Analyze and interpret the Space Center's target market, and apply design research methods to address user-frustrations. Developed an interaction design that encourages people to explore space will help the Space Centre improve and enhance its present initiatives.</p>
 			</div>
 
 			<div class="portfolio-content">
 				<div class="col">
 				
-					<img src="img/spacecentre.png" alt="Space Centre Quiz on iphone" style="width:100%">
+					<img src="img/spacecentre.png" alt="Space Centre Quiz on iphone" style="width:100%" height="200" width="200" >
 
 					<!-- <div class="layer"> -->
 					<div class="layer">
-						<a href="casestudy.html" alt="Link to Portfolio page"></a>
-						<h3>H.R MacMillian Space Centre</h3>
+						<a href="casestudy.html"><h3>H.R MacMillian Space Centre</h3></a>
 					</div>
 					
 					
@@ -90,12 +91,14 @@
 		</section>
 
 		
-		<section class="portfolio" id="portfolio">
+		<section class="portfolio" id="gallery">
 
 			<div class="heading1">
 					
-				<h2>GALLERY</h2>
-				<p>Other fun projects I have worked</p>
+				<h2>Other fun stuff!</h2>
+				<p>I had the opportunity to start my professional career as a graphic designer and content creator. During that time I started developing a taste in branding, helping local companies find their brand identity.
+					<br>
+					<br>I also helped influencers, start-ups and enterpresises in rebranding and reinforcing their brand Identity by designing posts and recycling content throughout all their platforms.</p>
 						
 			</div>
 
@@ -105,8 +108,7 @@
 					
 					<button class="btn1 active" onclick="filterSelection('all')"> Show all</button>
 					<button class="btn1" onclick="filterSelection('Social Media')"> Social Media</button>
-					<button class="btn1" onclick="filterSelection('Media Kits')"> Media Kits</button>
-					<button class="btn1" onclick="filterSelection('Branding')"> Marketing</button>
+					<button class="btn1" onclick="filterSelection('Branding')"> Branding</button>
 					
 				</div>
 			</div>	
@@ -117,7 +119,7 @@
 
 				<div class="column Branding">
 					<div class="content">
-						<img src="img/Gift-card.jpg"alt="Bella and Gaia gift card" style="width:100%">
+						<img src="img/Gift-card.jpg"alt="Bella and Gaia gift card" style="width:100%" >
 						<!-- <h4>Mountains</h4>
 						<p>Lorem ipsum dolor..</p> -->
 					</div>
@@ -131,13 +133,6 @@
 						<p>Lorem ipsum dolor..</p> -->
 					</div>
 				</div>
-				<!-- <div class="column Social Media">
-				<div class="content">
-					<video width="400" height="500" autoplay muted>
-						<source src="img/natural.MP4" type="video/mp4">
-					</video>
-				</div>
-				</div> -->
 			
 				<div class="column Social Media show">
 					<div class="content">
@@ -181,7 +176,7 @@
 				-->
 				<div class="column Branding show">
 				<div class="content">
-					<img src="img/BrandingGuidelines_Bella+Gaia_March232022_Page_01.png" alt="Bella and Gaia Branding guidelines" style="width:100%">
+					<img src="img/BrandingGuidelines_Bella+Gaia_March232022_Page_01.png" alt="Bella and Gaia Branding guidelines" style="width:100%" >
 					<!-- <h4>Man</h4>
 					<p>Lorem ipsum dolor..</p> -->
 				</div>
@@ -265,13 +260,8 @@
 							<h2>CONTACT ME</h2>
 						</div>
 						
-						<p class="lead">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
-
-						<p>Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js, Handlebars.js, jQuery, AJAX, HTML5, CSS3, SASS, SQL, APIs, Git, GitHub/Bitbucket, WordPress, Heroku, Responsive/Mobile Development.
-
-						<p>Please feel free to contact me with questions, comments or collaborations.</p>
-
-						<p>For more information, <a href="http://korenlc.com" target="_blank">visit my blog.</a></p>
+						<p class="lead">If you want to know more about me, my projects or simply grab a cup of coffee together. <br>
+							 Send me a message, I would love to hear from you!</p>
 					
 					</div>
 							
@@ -317,12 +307,6 @@
 							}
 
 
-							// function myFunction() {
-							// alert("The form was submitted");
-							// }
-
-
-
 						</script> 
 						
 					</div>
@@ -340,10 +324,18 @@
 		</section>
 
 		<footer>
-			<p>If you want to know more about me, my projects or simply grab a cup of coffee together. Just send me an email. I would love to hear from you.<br>	
+			<p> Feel free to send me an email! <br> I would love to hear from you.<br>	
 			<br>				
 			<a href="mailto:theannamathew@gmail.com">theannamathew@gmail.com</a></p> 
 		</footer>
 		<script type="text/javascript" src="js/java.js"></script>
 	</body>
 </html>
+
+<!-- Citations -->
+
+<!-- -Contact form> Submit button: https://www.youtube.com/watch?v=0NeKbJfEUDA&t=218s
+-Header portfolio grid: 
+Tutorial how to build: https://www.youtube.com/watch?v=f59tGJRs8bM
+Side by side images: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_images_side_by_side
+SlideShow: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
